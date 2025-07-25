@@ -25,11 +25,11 @@ cd ConstruBot
 ### 2. Запуск backend (FastAPI)
 ```bash
 cd backend
-# (Рекомендуется создать и активировать виртуальное окружение)
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+pip install fastapi uvicorn
+python -m uvicorn app.main:app --reload
 ```
 - Сервер будет доступен на http://localhost:8000
+- Если команда выше не работает, убедитесь, что вы используете тот же Python, куда устанавливали uvicorn (или активируйте venv).
 
 ### 3. Запуск frontend (React)
 ```bash
